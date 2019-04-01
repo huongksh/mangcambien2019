@@ -1,0 +1,10 @@
+<!DOCTYE html>
+<html>
+<head>
+<title>Hello </title>
+</head>
+
+<body>
+<img src="GD.jpg" alt="GD image" style="width: 250px;height:300px">
+</body>
+</html>

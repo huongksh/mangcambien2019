@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hello</title>
+<style>
+	ul{
+		list-style-type: none;
+		margin :0;
+		padding:0;
+		overflow:hidden;
+		background-color: green;
+	}
+	li{
+		float:left
+	}
+	
+	li a{
+		display : block;
+		color : white;
+		text-align : center;
+		padding:16px;
+		text-decoration: none; 
+	}
+	li a:hover{
+		background-color:pink;
+	}
+
+	h1{
+		color:red;
+		text-align: center;
+	}
+</style>
+</head>
+
+<body style="background-image:url('cloud.jpg')">
+<h1>Change the world, together !!</h1>
+<ul>
+	<li><a href="#home">Home</a></li>
+	<li><a href="#new">New</a></li>
+	<li><a href="#contact">Contact</a></li>
+	<li><a href="#about">About</a></li>
+        <li><a href="myprofile.html">My Profile</a></li>
+
+</ul>
+<h2> helllloooo</h2>
+<h3> helllloooo</h3>
+<h4> helllloooo</h4>
+<p>  helllloooo</p>
+<br></br>
+<img src="bigbang.jpg" alt="bigbang image" style="width:400px;height=450px">
+<p>CLick on smile icon to get Link youtube Big Bang
+<a href="https://www.youtube.com/channel/UCzw-C7fNfs018R1FzIKnlaA";>
+<img src="index.jpeg" alt="tutorial" style="width:40px; height=60px">
+</a>
+</p>
+<br></br>
+<script>
+function face(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "smile.png"
+  } else if(sw==1) {
+    pic = "cry.png"
+  }
+  else if(sw==2){
+    pic = "love.png"
+  }
+  else{
+    pic = "angry.png"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+<img id="myImage" src="smile.png" width="180" height="180">
+
+<p>
+<button type="button" onclick="face(0)">Smile</button>
+<button type="button" onclick="face(1)">Cry</button>
+<button type="button" onclick="face(2)">Love</button>
+<button type="button" onclick="face(3)">Angry</button>
+
+</p>
+</body>
+</html>

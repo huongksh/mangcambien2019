@@ -1,0 +1,89 @@
+<!DOCTYE html>
+<html>
+<head>
+<title>Hello </title>
+<style>
+* {
+  box-sizing: border-box;
+}
+.box1{
+	float :left;	
+	width : 50%;
+	padding-top : 100px;
+	padding-right : 20px;
+	padding-left : 350px;
+	padding-bottom : 100px;
+	height : 500px;
+
+}
+.box2{
+        float :left;    
+        width : 50%;
+        padding-top : 100px;
+        padding-left : 20px;
+        padding-bottom : 100px;
+        height : 500px;
+
+}
+
+.clearfix::after{
+	content:"";
+	clear : both;
+	display: table;
+}
+ul{
+	
+	list-style: square;
+	font-size:20px;
+}
+.header ul{
+	list-style-type: none;
+        margin :0;
+        padding:0;
+        overflow:hidden;
+        background-color: green;
+}
+.header li{
+	float:left;
+}
+.header li a{
+	 display : block;
+         color : white;
+         text-align : center;
+         padding:16px;
+
+         text-decoration: none;
+}
+.header li a:hover{
+         background-color:pink;
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+	<ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="myprofile.html">My Profile</a></li>
+        <li><a href="father.html">Father</a></li>
+        <li><a href="mother.html">Mother</a></li>
+	<li><a href="brothers.html">Brothers</a></li>
+	</ul>
+</div>
+
+<div class="clearfix">
+	<div class="box1" style="background-color:#ccc">
+	<img src="bo.jpg" alt="GD image" style="width:200px;height:310px">
+	</div>
+	<div class="box2" style="background-color:#ccc">
+	<ul>
+		<li>Ho Ten    : Nguyen Duc Hai</li>
+		<li>Ngay sinh : 25/03/1976</li>
+		<li>So DT     : 0378536529</li>
+		<li>Email     : ----------</li>
+		<li>Dia Chi   : Thai Binh</li>
+	</ul>
+	</div>
+</div>
+</body>
+</html>
